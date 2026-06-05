@@ -134,23 +134,25 @@
 
 ---
 
-### 任务 5：图片 OCR 解析器（agent-core 处理）
+### 任务 5：图片 OCR 解析器（前端 → skill-gateway）
 
-**目标**：图片 OCR 识别由 agent-core 处理，前端负责上传图片至 agent-core 并获取识别文字结果，后续可扩展至 Java skill-gateway 实现更丰富的 OCR 能力。
+**目标**：前端将图片上传到 skill-gateway 的 OCR 端点（**不再经 agent-core**），拿到识别文字。OCR 引擎在 skill-gateway 端用 Java 调用公司内部的 `DdsUtil.getOcrText(InputStream)` 实现。
 
 **涉及文件**：
-- 新建 `frontend/src/utils/imageOcr.ts`
+- 修改 `frontend/src/utils/imageOcr.ts`（路径不变，目标后端换掉）
 
 **具体工作**：
-- [ ] 5.1 实现 `ocrImageRemote(file: File): Promise<string>` 函数，将图片上传到 agent-core `/features/file/ocr-image` 端点处理
-- [ ] 5.2 处理 OCR 请求的 loading 状态与错误反馈
-- [ ] 5.3 图片预览缩略图生成（使用 URL.createObjectURL）
-- [ ] 5.4 预留 Java 端 OCR 扩展点：`imageOcr.ts` 中封装统一入口，后续切换后端只需改请求路径
+- [ ] 5.1 `ocrImageRemote(file: File): Promise<string>` 改为 `POST` 到 skill-gateway `/api/file/ocr-image`（前端 baseURL 配置指向 `http://localhost:18080` 即可）
+- [ ] 5.2 Request body：`multipart/form-data`，字段名 `file`
+- [ ] 5.3 Response 格式约定：`{ text: string, confidence?: number }`，与原 agent-core 端点保持一致
+- [ ] 5.4 保留 loading 状态、超时（10s）、错误反馈
+- [ ] 5.5 缩略图 `URL.createObjectURL` 不变
+- [ ] 5.6 注释明确：OCR 在 skill-gateway Java 端通过 `DdsUtil` 实现，前端只负责转发
 
 **影响分析**：
-- 前端不引入 OCR 库依赖，体积无影响
-- OCR 能力由 agent-core 节点承载，运行时需确保 agent-core 已部署
-- 后续 Java 端扩展现有 `/features/file/ocr-image` 的底层实现即可，前端无需改动
+- 前端只改 1 个 endpoint URL
+- 网络路径：frontend → skill-gateway:18080 直连（不再绕 agent-core:3000）
+- 前端不引入任何 OCR 库依赖
 
 ---
 
@@ -233,31 +235,102 @@
 
 ---
 
-### 任务 9：agent-core 文件内容处理端点
+### 任务 9：skill-gateway 图片 OCR 端点（Java + DdsUtil）
 
-**目标**：在 agent-core 中新增文件内容读取和 OCR 端点，前者作为前端旧格式文档解析的兜底，后者作为图片 OCR 的主路径。
+**目标**：在 skill-gateway 暴露 `POST /api/file/ocr-image` 端点，**纯 Java** 调用项目内工具类 `DdsUtil.getOcrText(InputStream)` 完成图片识别。OCR 能力不放在 agent-core，agent-core 不参与。
+
+**约束**：
+- 不能新增 `pom.xml` 外部依赖（AGENTS.md §7.1）
+- `DdsUtil` 是项目内的工具类，放在 `com.lobsterai.skillgateway.util` 包下；当前为占位实现（返回固定提示文字），后续替换为真实 OCR 调用
 
 **涉及文件**：
-- 新建 `backend/agent-core/src/features/file-processor/file-processor.controller.ts`
-- 新建 `backend/agent-core/src/features/file-processor/file-processor.service.ts`
-- 修改 `backend/agent-core/src/app.module.ts`
+
+| 文件 | 操作 | 用途 |
+|------|------|------|
+| `backend/skill-gateway/src/main/java/com/lobsterai/skillgateway/controller/FileOcrController.java` | **新增** | OCR REST 端点 |
+| `backend/skill-gateway/src/main/java/com/lobsterai/skillgateway/service/FileOcrService.java` | **新增** | 调用 `DdsUtil.getOcrText`，做参数与异常处理 |
+| `backend/skill-gateway/src/main/java/com/lobsterai/skillgateway/util/DdsUtil.java` | **新增** | OCR 工具类（占位实现：返回固定提示；后续替换为真实 OCR）|
+| `backend/skill-gateway/src/main/java/com/lobsterai/skillgateway/dto/OcrResponse.java` | **新增** | 响应 DTO |
+| `backend/skill-gateway/src/main/java/com/lobsterai/skillgateway/exception/OcrException.java` | **新增** | OCR 失败统一异常 |
+| `backend/skill-gateway/src/main/resources/application.properties` | **追加** | `app.file.ocr.timeout-seconds` 等配置项 |
 
 **具体工作**：
-- [ ] 9.1 创建 `FileProcessorController`
-  - `POST /features/file/parse-document`：接收旧格式文档，返回解析文字（兜底）
-  - `POST /features/file/ocr-image`：接收图片，返回 OCR 识别文字（主路径，后续可切换底层实现为 Java 端）
-- [ ] 9.2 创建 `FileProcessorService`
-  - 旧格式文档处理（.doc/.xls/.ppt）通过调用 Java gateway 或使用 Node.js 库
-  - 图片 OCR 使用 `tesseract.js`（Node.js 端）处理，后续可替换为 Java 端实现
-  - 预留 `ocrProvider` 配置项，支持 `'node'` / `'java'` 切换
-- [ ] 9.3 文件接收使用 multer 内存存储（不落盘）
-- [ ] 9.4 处理完成后立即释放文件内存
-- [ ] 9.5 在 `app.module.ts` 注册 Controller 和 Service
+
+**A. 后端代码**
+
+- [ ] 9.1 创建 `FileOcrController`
+  - 注解 `@RestController @RequestMapping("/api/file")`
+  - `@PostMapping(value = "/ocr-image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)`
+  - 接收 `@RequestParam("file") MultipartFile file`
+  - 调用 `fileOcrService.recognize(file)` 返回 `OcrResponse`
+  - `@ExceptionHandler(OcrException.class)` 返回 500 + 错误消息
+- [ ] 9.2 创建 `DdsUtil`（项目内工具类，占位实现）
+  ```java
+  package com.lobsterai.skillgateway.util;
+
+  public class DdsUtil {
+      private DdsUtil() {}
+
+      public static String getOcrText(InputStream inputStream) {
+          // TODO: 替换为真实 OCR 实现
+          return "图片识别功能正在开发中，请稍后。。。";
+      }
+  }
+  ```
+- [ ] 9.3 创建 `FileOcrService`
+  ```java
+  @Service
+  public class FileOcrService {
+      private final long timeoutSeconds;
+
+      public FileOcrService(
+          @Value("${app.file.ocr.timeout-seconds:10}") long timeoutSeconds
+      ) {
+          this.timeoutSeconds = timeoutSeconds;
+      }
+
+      public OcrResponse recognize(MultipartFile file) {
+          if (file == null || file.isEmpty()) {
+              throw new OcrException("uploaded file is empty");
+          }
+          try (InputStream in = file.getInputStream()) {
+              String text = DdsUtil.getOcrText(in);
+              return new OcrResponse(text, null);
+          } catch (Exception e) {
+              throw new OcrException("OCR failed: " + e.getMessage(), e);
+          }
+      }
+  }
+  ```
+- [ ] 9.4 `OcrResponse` 字段：`text: String`、`confidence: Double`（DdsUtil 暂不返回置信度，先 null 即可）
+- [ ] 9.5 `OcrException` extends `RuntimeException`
+- [ ] 9.6 `application.properties` 追加：
+  ```properties
+  # OCR
+  app.file.ocr.timeout-seconds=10
+  # Spring Multipart
+  spring.servlet.multipart.max-file-size=20MB
+  spring.servlet.multipart.max-request-size=25MB
+  ```
+
+**B. 后续替换为真实 OCR 的步骤（保留 DdsUtil 签名即可，业务代码零改动）**
+
+- [ ] 9.7 把 `DdsUtil.getOcrText` 方法体替换为真实 OCR 实现（HTTP / SDK / 命令行 等）
+- [ ] 9.8 如果真实方法签名有变动（如参数变成 `byte[]` / `MultipartFile` / 文件路径），同步修改 `FileOcrService.recognize` 的调用处
+- [ ] 9.9 如果需要引入第三方库，按 AGENTS.md §7.1 vendored 到 `backend/skill-gateway/lib/<name>/`，pom.xml 用 `system` 作用域引入
+
+**C. 验证**
+
+- [ ] 9.10 `mvn clean package -Dmaven.test.skip=true` 出 `target/skill-gateway.jar`
+- [ ] 9.11 `java -jar target/skill-gateway.jar` 启动后，`curl -F file=@test.png http://localhost:18080/api/file/ocr-image` 返回 `{ "text": "图片识别功能正在开发中，请稍后。。。", "confidence": null }`
+- [ ] 9.12 前端上传图片 → 端到端联调：图片出现在对话输入框，点击发送后 LLM 消息里能看到 `图片识别功能正在开发中，请稍后。。。` 文字
 
 **影响分析**：
-- 纯新增 feature 模块，遵循现有 `features/avatar/`、`features/optimize-text/` 模式
-- 仅需在 `app.module.ts` 中新增一行 imports
-- 不影响已有 agent 流程
+- `pom.xml` 改动：**0 行**（DdsUtil 是项目内类，无需任何依赖配置）
+- 不引入任何 Maven 中心仓库依赖，也不 vendored 任何 jar
+- 打包产物体积：不变
+- agent-core 完全不参与 OCR：原任务 9 中规划的 `backend/agent-core/src/features/file-processor/` 目录**直接删除**（如已建）
+- 前端任务 5 改动：仅 endpoint URL 一行
 
 ---
 

@@ -16,7 +16,7 @@
  */
 
 import type { FileType } from '@/types/fileUpload'
-import { agentUrl } from '@/services/config'
+import { agentUrl, apiUrl } from '@/services/config'
 
 /** agent-core 兜底解析超时（毫秒） */
 const AGENT_TIMEOUT_MS = 30_000
@@ -73,9 +73,52 @@ async function agentFallback(file: File): Promise<string> {
 }
 
 /**
+ * 调用 skill-gateway 图片 OCR 端点
+ *
+ * 使用 FormData 上传图片到 POST /api/file/ocr-image。
+ * skill-gateway 内调用 DdsUtil.getOcrText() 完成识别。
+ */
+async function callImageOcr(file: File): Promise<string> {
+  const form = new FormData()
+  form.append('file', file)
+
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), AGENT_TIMEOUT_MS)
+
+  let response: Response
+  try {
+    response = await fetch(apiUrl('/api/file/ocr-image'), {
+      method: 'POST',
+      body: form,
+      signal: controller.signal,
+    })
+  } catch (e) {
+    clearTimeout(timer)
+    if (e instanceof DOMException && e.name === 'AbortError') {
+      throw new Error('图片识别超时，请稍后重试')
+    }
+    throw new Error('文件解析服务暂不可用，请联系管理员')
+  } finally {
+    clearTimeout(timer)
+  }
+
+  if (!response.ok) {
+    throw new Error('文件解析服务暂不可用，请联系管理员')
+  }
+
+  const data = await response.json().catch(() => null)
+  if (data && typeof data.text === 'string') {
+    return data.text
+  }
+
+  throw new Error('文件解析服务返回格式异常')
+}
+
+/**
  * 解析文档文件，返回纯文本内容
  *
  * 根据文件扩展名和 FileType 自动选择解析器：
+ * - 图片       → callImageOcr() （skill-gateway OCR）
  * - 新格式（.docx / .xlsx）前端处理（按需加载 mammoth / SheetJS）
  * - 旧格式（.doc / .xls）和 ppt 系列回退 agent-core
  * - .txt / .md 使用原生 FileReader 零依赖读取
@@ -123,6 +166,11 @@ export async function parseDocument(
   if (fileType === 'txt') {
     const { parseTxt } = await import('./txtParser')
     return parseTxt(file, signal)
+  }
+
+  // ── 图片 OCR ──
+  if (fileType === 'image') {
+    return callImageOcr(file)
   }
 
   // 兜底：未知 fileType
