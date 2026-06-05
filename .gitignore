@@ -43,3 +43,8 @@ backend/skill-gateway/apache-maven-3.9.6/
 start-services.bat
 stop-services.bat
 
+# TS增量编译缓存，全局忽略所有tsbuildinfo
+*.tsbuildinfo
+# 精准忽略当前模块（二选一即可，上面全局更省心）
+backend/agent-core/dist/*.tsbuildinfo
+
