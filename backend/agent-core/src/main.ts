@@ -22,6 +22,7 @@
 
 import { config } from 'dotenv';
 import { NestFactory } from '@nestjs/core';
+import { json, urlencoded } from 'express';
 import { resolve } from 'path';
 import { AppModule } from './app.module';
 
@@ -53,6 +54,11 @@ if (result.error) {
  */
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  // 任务 7/8 文件上传会带 base64 编码内容（1MB 文件 ≈ 1.4MB JSON）
+  // 默认 bodyParser 限制 100kb 不够用，显式提到 50mb
+  app.use(json({ limit: '50mb' }));
+  app.use(urlencoded({ limit: '50mb', extended: true }));
 
   const allowedOrigins = (process.env.CORS_ALLOWED_ORIGINS || 'http://localhost:8080,http://127.0.0.1:8080')
     .split(',')
