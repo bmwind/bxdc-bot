@@ -53,18 +53,18 @@ export declare const sshExecutorToolInputSchema: z.ZodObject<{
     password: z.ZodOptional<z.ZodString>;
     confirmed: z.ZodDefault<z.ZodBoolean>;
 }, "strip", z.ZodTypeAny, {
+    password?: string;
     host?: string;
     username?: string;
     command?: string;
     privateKey?: string;
-    password?: string;
     confirmed?: boolean;
 }, {
+    password?: string;
     host?: string;
     username?: string;
     command?: string;
     privateKey?: string;
-    password?: string;
     confirmed?: boolean;
 }>;
 declare const skillGeneratorToolInputSchema: z.ZodObject<{
