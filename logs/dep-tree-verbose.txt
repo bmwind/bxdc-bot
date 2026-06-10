@@ -1,0 +1,476 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.lobsterai:skill-gateway >---------------------
+[INFO] Building skill-gateway 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.3.0:tree (default-cli) @ skill-gateway ---
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.pom
+Progress (1): 1.4 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.pom (1.4 kB at 3.2 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/com/microsoft/sqlserver/mssql-jdbc/10.2.1.jre8/mssql-jdbc-10.2.1.jre8.pom
+Progress (1): 4.1/19 kB
+Progress (1): 7.3/19 kB
+Progress (1): 11/19 kB 
+Progress (1): 15/19 kB
+Progress (1): 19 kB   
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/com/microsoft/sqlserver/mssql-jdbc/10.2.1.jre8/mssql-jdbc-10.2.1.jre8.pom (19 kB at 147 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.pom
+Progress (1): 1.1 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.pom (1.1 kB at 6.3 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.pom
+Progress (1): 1.4 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.pom (1.4 kB at 3.1 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/mybatis/mybatis/3.5.9/mybatis-3.5.9.pom
+Progress (1): 4.1/13 kB
+Progress (1): 7.3/13 kB
+Progress (1): 11/13 kB 
+Progress (1): 13 kB   
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/mybatis/mybatis/3.5.9/mybatis-3.5.9.pom (13 kB at 185 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/springframework/batch/spring-batch-infrastructure/4.3.6/spring-batch-infrastructure-4.3.6.pom
+Progress (1): 4.1/10 kB
+Progress (1): 8.2/10 kB
+Progress (1): 10 kB    
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/springframework/batch/spring-batch-infrastructure/4.3.6/spring-batch-infrastructure-4.3.6.pom (10 kB at 31 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/springframework/retry/spring-retry/1.3.3/spring-retry-1.3.3.pom
+Progress (1): 4.1/8.3 kB
+Progress (1): 7.3/8.3 kB
+Progress (1): 8.3 kB    
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/springframework/retry/spring-retry/1.3.3/spring-retry-1.3.3.pom (8.3 kB at 88 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/springframework/spring-framework-bom/4.3.29.RELEASE/spring-framework-bom-4.3.29.RELEASE.pom
+Progress (1): 4.1/5.1 kB
+Progress (1): 5.1 kB    
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/springframework/spring-framework-bom/4.3.29.RELEASE/spring-framework-bom-4.3.29.RELEASE.pom (5.1 kB at 52 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/graalvm/nativeimage/svm/19.3.6/svm-19.3.6.pom
+Progress (1): 2.7 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/graalvm/nativeimage/svm/19.3.6/svm-19.3.6.pom (2.7 kB at 7.6 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/jetbrains/annotations-java5/23.0.0/annotations-java5-23.0.0.pom
+Progress (1): 1.4 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/jetbrains/annotations-java5/23.0.0/annotations-java5-23.0.0.pom (1.4 kB at 2.2 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/net/sf/saxon/Saxon-HE/11.4/Saxon-HE-11.4.pom
+Progress (1): 4.1/4.2 kB
+Progress (1): 4.2 kB    
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/net/sf/saxon/Saxon-HE/11.4/Saxon-HE-11.4.pom (4.2 kB at 40 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/xmlresolver/xmlresolver/4.4.3/xmlresolver-4.4.3.pom
+Progress (1): 2.3 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/xmlresolver/xmlresolver/4.4.3/xmlresolver-4.4.3.pom (2.3 kB at 19 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.pom
+Progress (1): 4.1/5.8 kB
+Progress (1): 5.8 kB    
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.pom (5.8 kB at 42 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/client5/httpclient5-parent/5.1.3/httpclient5-parent-5.1.3.pom
+Progress (1): 4.1/14 kB
+Progress (1): 7.3/14 kB
+Progress (1): 11/14 kB 
+Progress (1): 14 kB   
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/client5/httpclient5-parent/5.1.3/httpclient5-parent-5.1.3.pom (14 kB at 72 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpcomponents-parent/12/httpcomponents-parent-12.pom
+Progress (1): 4.1/32 kB
+Progress (1): 7.3/32 kB
+Progress (1): 11/32 kB 
+Progress (1): 15/32 kB
+Progress (1): 19/32 kB
+Progress (1): 23/32 kB
+Progress (1): 27/32 kB
+Progress (1): 30/32 kB
+Progress (1): 32 kB   
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/httpcomponents-parent/12/httpcomponents-parent-12.pom (32 kB at 238 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/core5/httpcore5/5.1.4/httpcore5-5.1.4.pom
+Progress (1): 3.8 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/core5/httpcore5/5.1.4/httpcore5-5.1.4.pom (3.8 kB at 7.2 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/core5/httpcore5-parent/5.1.4/httpcore5-parent-5.1.4.pom
+Progress (1): 4.1/10 kB
+Progress (1): 7.3/10 kB
+Progress (1): 10 kB    
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/core5/httpcore5-parent/5.1.4/httpcore5-parent-5.1.4.pom (10 kB at 31 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/core5/httpcore5-h2/5.1.4/httpcore5-h2-5.1.4.pom
+Progress (1): 3.5 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/httpcomponents/core5/httpcore5-h2/5.1.4/httpcore5-h2-5.1.4.pom (3.5 kB at 14 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/com/github/javaparser/javaparser-core/3.24.4/javaparser-core-3.24.4.pom
+Progress (1): 4.1/4.9 kB
+Progress (1): 4.9 kB    
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/com/github/javaparser/javaparser-core/3.24.4/javaparser-core-3.24.4.pom (4.9 kB at 8.7 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/com/github/javaparser/javaparser-parent/3.24.4/javaparser-parent-3.24.4.pom
+Progress (1): 4.1/22 kB
+Progress (1): 7.3/22 kB
+Progress (1): 11/22 kB 
+Progress (1): 16/22 kB
+Progress (1): 20/22 kB
+Progress (1): 22 kB   
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/com/github/javaparser/javaparser-parent/3.24.4/javaparser-parent-3.24.4.pom (22 kB at 33 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.4/maven-plugin-annotations-3.4.pom
+Progress (1): 1.6 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.4/maven-plugin-annotations-3.4.pom (1.6 kB at 4.4 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.4/maven-plugin-tools-3.4.pom
+Progress (1): 4.1/14 kB
+Progress (1): 7.3/14 kB
+Progress (1): 11/14 kB 
+Progress (1): 14 kB   
+                   
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.4/maven-plugin-tools-3.4.pom (14 kB at 53 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/net/java/dev/jna/jna/5.12.1/jna-5.12.1.pom
+Progress (1): 2.0 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/net/java/dev/jna/jna/5.12.1/jna-5.12.1.pom (2.0 kB at 20 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.pom
+Progress (1): 2.3 kB
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.pom (2.3 kB at 23 kB/s)
+Downloading from aliyunmaven: https://maven.aliyun.com/repository/public/com/google/code/findbugs/findbugs-annotations/3.0.1/findbugs-annotations-3.0.1.pom
+Progress (1): 4.1/6.2 kB
+Progress (1): 6.2 kB    
+                    
+Downloaded from aliyunmaven: https://maven.aliyun.com/repository/public/com/google/code/findbugs/findbugs-annotations/3.0.1/findbugs-annotations-3.0.1.pom (6.2 kB at 12 kB/s)
+[INFO] com.lobsterai:skill-gateway:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.7.3:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.7.3:compile (version managed from 2.7.3; scope not updated to compile)
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.7.3:compile (version managed from 2.7.3; scope not updated to compile)
+[INFO] |  |  |  +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  |  \- (org.springframework:spring-context:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  +- (org.springframework.boot:spring-boot-autoconfigure:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.7.3:compile (version managed from 2.7.3)
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.11:compile (version managed from 1.2.11)
+[INFO] |  |  |  |  +- ch.qos.logback:logback-core:jar:1.2.11:compile (version managed from 1.2.11)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.32; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile (version managed from 2.17.2)
+[INFO] |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.35; omitted for duplicate)
+[INFO] |  |  |  |  \- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.17.2; omitted for duplicate)
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile (version managed from 1.7.36)
+[INFO] |  |  |     \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from 1.3.5)
+[INFO] |  |  +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.30:compile (version managed from 1.30)
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.7.3:compile (version managed from 2.7.3)
+[INFO] |  |  +- (org.springframework.boot:spring-boot-starter:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-web:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.3:compile (version managed from 2.13.3)
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.3:compile (version managed from 2.13.3)
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile (version managed from 2.13.3)
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.3:compile (version managed from 2.13.3)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.3:compile (version managed from 2.13.3)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.3:compile (version managed from 2.13.3)
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.3:compile - version managed from 2.13.3; omitted for duplicate)
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.3:compile (version managed from 2.7.3)
+[INFO] |  |  +- (jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile - version managed from 1.3.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.65:compile (version managed from 9.0.65)
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.65:compile (version managed from 9.0.65)
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.65:compile (version managed from 9.0.65)
+[INFO] |  |     \- (org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.65:compile - version managed from 9.0.65; omitted for duplicate)
+[INFO] |  +- org.springframework:spring-web:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |  |  +- org.springframework:spring-beans:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |     +- (org.springframework:spring-aop:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- org.springframework:spring-context:jar:5.3.22:compile (version managed from 5.3.22; scope not updated to compile)
+[INFO] |     |  +- (org.springframework:spring-aop:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     |  +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     |  +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     |  \- (org.springframework:spring-expression:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- org.springframework:spring-expression:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |     |  \- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     \- (org.springframework:spring-web:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] +- org.springframework.boot:spring-boot-starter-security:jar:2.7.3:compile
+[INFO] |  +- (org.springframework.boot:spring-boot-starter:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |  +- org.springframework:spring-aop:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |  |  +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  +- org.springframework.security:spring-security-config:jar:5.7.3:compile (version managed from 5.7.3)
+[INFO] |  |  +- org.springframework.security:spring-security-core:jar:5.7.3:compile (version managed from 5.7.3)
+[INFO] |  |  |  +- org.springframework.security:spring-security-crypto:jar:5.7.3:compile (version managed from 5.7.3)
+[INFO] |  |  |  +- (org.springframework:spring-aop:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  |  +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  |  +- (org.springframework:spring-context:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  |  +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  |  \- (org.springframework:spring-expression:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-aop:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-context:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  \- org.springframework.security:spring-security-web:jar:5.7.3:compile (version managed from 5.7.3)
+[INFO] |     +- (org.springframework.security:spring-security-core:jar:5.7.3:compile - version managed from 5.7.3; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-aop:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-context:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-expression:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     \- (org.springframework:spring-web:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] +- com.baomidou:mybatis-plus-boot-starter:jar:3.5.3.1:compile
+[INFO] |  +- com.baomidou:mybatis-plus:jar:3.5.3.1:compile
+[INFO] |  |  \- com.baomidou:mybatis-plus-extension:jar:3.5.3.1:compile
+[INFO] |  |     +- com.baomidou:mybatis-plus-core:jar:3.5.3.1:compile
+[INFO] |  |     |  +- com.baomidou:mybatis-plus-annotation:jar:3.5.3.1:compile
+[INFO] |  |     |  +- com.github.jsqlparser:jsqlparser:jar:4.4:compile
+[INFO] |  |     |  \- org.mybatis:mybatis:jar:3.5.10:compile (scope not updated to compile)
+[INFO] |  |     |     \- com.microsoft.sqlserver:mssql-jdbc:jar:10.2.1.jre8:provided (version managed from 11.1.1.jre8-preview)
+[INFO] |  |     |        +- (org.osgi:org.osgi.core:jar:6.0.0:provided - omitted for duplicate)
+[INFO] |  |     |        \- org.osgi:org.osgi.compendium:jar:5.0.0:provided
+[INFO] |  |     \- org.mybatis:mybatis-spring:jar:2.0.7:compile
+[INFO] |  |        +- (org.mybatis:mybatis:jar:3.5.9:provided - omitted for conflict with 3.5.10)
+[INFO] |  |        +- (org.springframework:spring-context:jar:5.3.22:provided - version managed from 5.3.15; omitted for duplicate)
+[INFO] |  |        +- (org.springframework:spring-jdbc:jar:5.3.22:provided - version managed from 5.3.15; omitted for duplicate)
+[INFO] |  |        \- org.springframework.batch:spring-batch-infrastructure:jar:4.3.6:provided (version managed from 4.3.4)
+[INFO] |  |           +- org.springframework.retry:spring-retry:jar:1.3.3:provided (version managed from 1.3.3)
+[INFO] |  |           \- (org.springframework:spring-core:jar:5.3.22:provided - version managed from 5.3.20; omitted for duplicate)
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.7.3:compile (version managed from 2.5.3; scope not updated to compile)
+[INFO] |  |  \- (org.springframework.boot:spring-boot:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |  \- org.springframework.boot:spring-boot-starter-jdbc:jar:2.7.3:compile (version managed from 2.5.3)
+[INFO] |     +- (org.springframework.boot:spring-boot-starter:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |     +- com.zaxxer:HikariCP:jar:4.0.3:compile (version managed from 4.0.3)
+[INFO] |     |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.30; omitted for duplicate)
+[INFO] |     \- org.springframework:spring-jdbc:jar:5.3.22:compile (version managed from 5.3.22; scope not updated to compile)
+[INFO] |        +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |        +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |        \- org.springframework:spring-tx:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |           +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |           \- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] +- mysql:mysql-connector-java:jar:8.0.30:runtime
+[INFO] +- com.h2database:h2:jar:2.1.214:test
+[INFO] +- org.projectlombok:lombok:jar:1.18.30:compile
+[INFO] +- com.hierynomus:sshj:jar:0.38.0:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.36:compile (version managed from 2.0.7; scope not updated to compile)
+[INFO] |  +- org.bouncycastle:bcprov-jdk18on:jar:1.75:runtime
+[INFO] |  +- org.bouncycastle:bcpkix-jdk18on:jar:1.75:runtime
+[INFO] |  |  +- (org.bouncycastle:bcprov-jdk18on:jar:1.75:runtime - omitted for duplicate)
+[INFO] |  |  \- org.bouncycastle:bcutil-jdk18on:jar:1.75:runtime
+[INFO] |  |     \- (org.bouncycastle:bcprov-jdk18on:jar:1.75:runtime - omitted for duplicate)
+[INFO] |  +- com.hierynomus:asn-one:jar:0.6.0:runtime
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:runtime - version managed from 1.7.13; omitted for duplicate)
+[INFO] |  \- net.i2p.crypto:eddsa:jar:0.3.0:runtime
+[INFO] +- org.apache.httpcomponents:httpclient:jar:4.5.13:compile
+[INFO] |  +- org.apache.httpcomponents:httpcore:jar:4.4.15:compile (version managed from 4.4.13)
+[INFO] |  \- commons-codec:commons-codec:jar:1.15:compile (version managed from 1.11; scope not updated to compile)
+[INFO] +- org.springframework.boot:spring-boot-starter-webflux:jar:2.7.3:compile
+[INFO] |  +- (org.springframework.boot:spring-boot-starter:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |  +- (org.springframework.boot:spring-boot-starter-json:jar:2.7.3:compile - version managed from 2.7.3; omitted for duplicate)
+[INFO] |  +- org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.7.3:compile (version managed from 2.7.3)
+[INFO] |  |  \- io.projectreactor.netty:reactor-netty-http:jar:1.0.22:compile (version managed from 1.0.22)
+[INFO] |  |     +- io.netty:netty-codec-http:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  +- io.netty:netty-common:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  +- org.graalvm.nativeimage:svm:jar:19.3.6:provided
+[INFO] |  |     |  |  \- org.jetbrains:annotations-java5:jar:23.0.0:provided
+[INFO] |  |     |  +- io.netty:netty-buffer:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  \- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- io.netty:netty-transport:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  \- (io.netty:netty-resolver:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- io.netty:netty-codec:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  \- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  \- io.netty:netty-handler:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |     +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-resolver:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-transport-native-unix-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     \- (io.netty:netty-codec:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     +- io.netty:netty-codec-http2:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-codec:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-handler:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  \- (io.netty:netty-codec-http:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     +- io.netty:netty-resolver-dns:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- io.netty:netty-resolver:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  \- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-codec:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- io.netty:netty-codec-dns:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  \- (io.netty:netty-codec:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  \- (io.netty:netty-handler:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     +- io.netty:netty-resolver-dns-native-macos:jar:osx-x86_64:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  \- io.netty:netty-resolver-dns-classes-macos:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |     +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-resolver-dns:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     \- (io.netty:netty-transport-native-unix-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     +- io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- io.netty:netty-transport-native-unix-common:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  \- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  \- io.netty:netty-transport-classes-epoll:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |     +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |     \- (io.netty:netty-transport-native-unix-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     +- io.projectreactor.netty:reactor-netty-core:jar:1.0.22:compile (version managed from 1.0.22)
+[INFO] |  |     |  +- (io.netty:netty-handler:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- io.netty:netty-handler-proxy:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- (io.netty:netty-codec:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  +- io.netty:netty-codec-socks:jar:4.1.79.Final:compile (version managed from 4.1.79.Final)
+[INFO] |  |     |  |  |  +- (io.netty:netty-common:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  |  +- (io.netty:netty-buffer:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  |  +- (io.netty:netty-transport:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  |  \- (io.netty:netty-codec:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  |  \- (io.netty:netty-codec-http:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-resolver-dns:jar:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-resolver-dns-native-macos:jar:osx-x86_64:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  +- (io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.79.Final:compile - version managed from 4.1.79.Final; omitted for duplicate)
+[INFO] |  |     |  \- (io.projectreactor:reactor-core:jar:3.4.22:compile - version managed from 3.4.22; omitted for duplicate)
+[INFO] |  |     \- (io.projectreactor:reactor-core:jar:3.4.22:compile - version managed from 3.4.22; omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-web:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |  \- org.springframework:spring-webflux:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO] |     +- (org.springframework:spring-beans:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-core:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-web:jar:5.3.22:compile - version managed from 5.3.22; omitted for duplicate)
+[INFO] |     \- io.projectreactor:reactor-core:jar:3.4.22:compile (version managed from 3.4.21)
+[INFO] |        \- org.reactivestreams:reactive-streams:jar:1.0.4:compile (version managed from 1.0.4)
+[INFO] +- org.apache.poi:poi-ooxml:jar:5.2.3:compile
+[INFO] |  +- org.apache.poi:poi:jar:5.2.3:compile
+[INFO] |  |  +- (commons-codec:commons-codec:jar:1.15:compile - version managed from 1.15; omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-collections4:jar:4.4:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-math3:jar:3.6.1:compile - omitted for duplicate)
+[INFO] |  |  +- (commons-io:commons-io:jar:2.11.0:compile - omitted for duplicate)
+[INFO] |  |  +- com.zaxxer:SparseBitSet:jar:1.2:compile
+[INFO] |  |  \- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.18.0; omitted for duplicate)
+[INFO] |  +- org.apache.poi:poi-ooxml-lite:jar:5.2.3:compile
+[INFO] |  |  \- (org.apache.xmlbeans:xmlbeans:jar:5.1.1:compile - omitted for duplicate)
+[INFO] |  +- org.apache.xmlbeans:xmlbeans:jar:5.1.1:compile
+[INFO] |  |  +- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.18.0; omitted for duplicate)
+[INFO] |  |  +- net.sf.saxon:Saxon-HE:jar:11.4:provided
+[INFO] |  |  |  +- org.xmlresolver:xmlresolver:jar:4.4.3:provided
+[INFO] |  |  |  |  +- org.apache.httpcomponents.client5:httpclient5:jar:5.1.3:provided (version managed from 5.1.3)
+[INFO] |  |  |  |  |  +- (org.apache.httpcomponents.core5:httpcore5:jar:5.1.4:provided - version managed from 5.1.3; omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.1.4:provided (version managed from 5.1.3)
+[INFO] |  |  |  |  |  |  \- (org.apache.httpcomponents.core5:httpcore5:jar:5.1.4:provided - version managed from 5.1.4; omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  |  |  \- (commons-codec:commons-codec:jar:1.15:provided - version managed from 1.15; omitted for duplicate)
+[INFO] |  |  |  |  +- org.apache.httpcomponents.core5:httpcore5:jar:5.1.4:provided (version managed from 5.1.3)
+[INFO] |  |  |  |  \- (xml-apis:xml-apis:jar:1.4.01:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.xmlresolver:xmlresolver:jar:data:4.4.3:provided
+[INFO] |  |  |     +- (org.apache.httpcomponents.client5:httpclient5:jar:5.1.3:provided - version managed from 5.1.3; omitted for duplicate)
+[INFO] |  |  |     +- (org.apache.httpcomponents.core5:httpcore5:jar:5.1.4:provided - version managed from 5.1.3; omitted for duplicate)
+[INFO] |  |  |     \- (xml-apis:xml-apis:jar:1.4.01:provided - omitted for duplicate)
+[INFO] |  |  +- com.github.javaparser:javaparser-core:jar:3.24.4:provided
+[INFO] |  |  +- org.apache.maven:maven-plugin-api:jar:3.0:provided
+[INFO] |  |  |  +- (org.apache.maven:maven-model:jar:3.0:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.apache.maven:maven-artifact:jar:3.0:provided
+[INFO] |  |  |  |  \- (org.codehaus.plexus:plexus-utils:jar:2.0.4:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:provided
+[INFO] |  |  |     +- org.codehaus.plexus:plexus-component-annotations:jar:1.5.4:provided
+[INFO] |  |  |     +- org.codehaus.plexus:plexus-classworlds:jar:2.2.3:provided
+[INFO] |  |  |     +- (org.codehaus.plexus:plexus-utils:jar:2.0.5:provided - omitted for conflict with 2.0.4)
+[INFO] |  |  |     \- org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:provided
+[INFO] |  |  |        \- org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:provided
+[INFO] |  |  +- org.apache.maven:maven-model:jar:3.0:provided
+[INFO] |  |  |  \- org.codehaus.plexus:plexus-utils:jar:2.0.4:provided
+[INFO] |  |  +- org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.4:provided
+[INFO] |  |  |  \- (org.apache.maven:maven-artifact:jar:3.0:provided - omitted for duplicate)
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.4.01:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.21:compile
+[INFO] |  |  \- org.osgi:org.osgi.core:jar:6.0.0:provided
+[INFO] |  +- commons-io:commons-io:jar:2.11.0:compile
+[INFO] |  +- com.github.virtuald:curvesapi:jar:1.07:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile (version managed from 2.18.0)
+[INFO] |  |  \- (org.osgi:org.osgi.core:jar:4.3.1:provided - omitted for conflict with 6.0.0)
+[INFO] |  \- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] +- org.apache.poi:poi-scratchpad:jar:5.2.3:compile
+[INFO] |  +- (org.apache.poi:poi:jar:5.2.3:compile - omitted for duplicate)
+[INFO] |  +- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.18.0; omitted for duplicate)
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.6.1:compile
+[INFO] |  \- (commons-codec:commons-codec:jar:1.15:compile - version managed from 1.15; omitted for duplicate)
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.7.3:test
+[INFO]    +- (org.springframework.boot:spring-boot-starter:jar:2.7.3:test - version managed from 2.7.3; omitted for duplicate)
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.7.3:test (version managed from 2.7.3)
+[INFO]    |  \- (org.springframework.boot:spring-boot:jar:2.7.3:test - version managed from 2.7.3; omitted for duplicate)
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.7.3:test (version managed from 2.7.3)
+[INFO]    |  +- (org.springframework.boot:spring-boot:jar:2.7.3:test - version managed from 2.7.3; omitted for duplicate)
+[INFO]    |  +- (org.springframework.boot:spring-boot-test:jar:2.7.3:test - version managed from 2.7.3; omitted for duplicate)
+[INFO]    |  \- (org.springframework.boot:spring-boot-autoconfigure:jar:2.7.3:test - version managed from 2.7.3; omitted for duplicate)
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.7.0:test (version managed from 2.7.0)
+[INFO]    |  +- net.minidev:json-smart:jar:2.4.8:test (version managed from 2.4.7)
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:2.4.8:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:9.1:test
+[INFO]    |  \- (org.slf4j:slf4j-api:jar:1.7.36:test - version managed from 1.7.33; omitted for duplicate)
+[INFO]    +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:test (version managed from 2.3.3)
+[INFO]    |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:test (version managed from 1.2.2)
+[INFO]    +- org.assertj:assertj-core:jar:3.22.0:test (version managed from 3.22.0)
+[INFO]    +- org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[INFO]    +- org.junit.jupiter:junit-jupiter:jar:5.8.2:test (version managed from 5.8.2)
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test (version managed from 5.8.2)
+[INFO]    |  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+[INFO]    |  |  +- org.junit.platform:junit-platform-commons:jar:1.8.2:test (version managed from 1.8.2)
+[INFO]    |  |  |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[INFO]    |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-params:jar:5.8.2:test (version managed from 5.8.2)
+[INFO]    |  |  +- (org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test - version managed from 5.8.2; omitted for duplicate)
+[INFO]    |  |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[INFO]    |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.8.2:test (version managed from 5.8.2)
+[INFO]    |     +- org.junit.platform:junit-platform-engine:jar:1.8.2:test (version managed from 1.8.2)
+[INFO]    |     |  +- (org.opentest4j:opentest4j:jar:1.2.0:test - omitted for duplicate)
+[INFO]    |     |  +- (org.junit.platform:junit-platform-commons:jar:1.8.2:test - version managed from 1.8.2; omitted for duplicate)
+[INFO]    |     |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[INFO]    |     +- (org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test - version managed from 5.8.2; omitted for duplicate)
+[INFO]    |     \- (org.apiguardian:apiguardian-api:jar:1.1.2:test - omitted for duplicate)
+[INFO]    +- org.mockito:mockito-core:jar:4.5.1:test (version managed from 4.5.1)
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.12.13:test (version managed from 1.12.9)
+[INFO]    |  |  +- net.java.dev.jna:jna:jar:5.12.1:test
+[INFO]    |  |  +- net.java.dev.jna:jna-platform:jar:5.12.1:test
+[INFO]    |  |  |  \- (net.java.dev.jna:jna:jar:5.12.1:test - omitted for duplicate)
+[INFO]    |  |  +- com.google.code.findbugs:findbugs-annotations:jar:3.0.1:test
+[INFO]    |  |  \- com.google.code.findbugs:jsr305:jar:3.0.2:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.12.13:test (version managed from 1.12.9)
+[INFO]    |  |  +- (net.java.dev.jna:jna:jar:5.12.1:test - omitted for duplicate)
+[INFO]    |  |  +- (net.java.dev.jna:jna-platform:jar:5.12.1:test - omitted for duplicate)
+[INFO]    |  |  +- (com.google.code.findbugs:findbugs-annotations:jar:3.0.1:test - omitted for duplicate)
+[INFO]    |  |  \- (com.google.code.findbugs:jsr305:jar:3.0.2:test - omitted for duplicate)
+[INFO]    |  \- org.objenesis:objenesis:jar:3.2:test
+[INFO]    +- org.mockito:mockito-junit-jupiter:jar:4.5.1:test (version managed from 4.5.1)
+[INFO]    |  +- (org.mockito:mockito-core:jar:4.5.1:test - version managed from 4.5.1; omitted for duplicate)
+[INFO]    |  \- (org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test - version managed from 5.8.2; omitted for duplicate)
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.1:test (version managed from 1.5.1)
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.3.22:compile (version managed from 5.3.22; scope not updated to compile)
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.3.22:compile (version managed from 5.3.22)
+[INFO]    +- org.springframework:spring-test:jar:5.3.22:test (version managed from 5.3.22)
+[INFO]    |  \- (org.springframework:spring-core:jar:5.3.22:test - version managed from 5.3.22; omitted for duplicate)
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.9.0:test (version managed from 2.9.0)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.870 s
+[INFO] Finished at: 2026-06-08T14:23:55+08:00
+[INFO] ------------------------------------------------------------------------
